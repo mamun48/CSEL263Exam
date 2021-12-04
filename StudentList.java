@@ -50,10 +50,10 @@ public class StudentList
 			{
 				BufferedWriter s = new BufferedWriter(new FileWriter("students.txt", true));
 				String t = args[0].substring(1);
-	        	Date d = new Date();
-	        	String df = "dd/mm/yyyy-hh:mm:ss a";
-	        	DateFormat dateFormat = new SimpleDateFormat(df);
-	        	String fd= dateFormat.format(d);
+	        		Date d = new Date();
+	        		String df = "dd/mm/yyyy-hh:mm:ss a";
+	        		DateFormat dateFormat = new SimpleDateFormat(df);
+	        		String fd= dateFormat.format(d);
 				s.write(", "+t+"\nList last updated on "+fd);
 				s.close();
 			} catch (Exception e)
@@ -103,7 +103,7 @@ public class StudentList
 					{
 						if (!in_word) 
 						{
-								count++; in_word =true;	
+							count++; in_word =true;	
 						}
 						else 
 						{ 
